@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hackathon Project - Text Abbreviations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--link rel="stylesheet" href="assets/css/main.css" /0-->
+		<link rel="stylesheet" type = text/css href= "{{ url_for('static',filename='assets/css/main.css') }}" />
+		</head>
+	<body>
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Read-Ability</h1>
+					<p>A Project to help bridge the generational gap</p>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Banner -->
+					<section id="intro" class="main">
+						<span class="fa fa-laptop"></span>
+						<h2>Purpose</h2>
+						<p>A translator to re-hipify yourself. Connect with your grandchildren and their internet slang.</p>
+						<ul class="actions">
+							<li><a href="#" class="button big">Learn More</a></li>
+						</ul>
+					</section>
+
+				<!-- Items -->
+					<section class="main items">
+						<article class="item">
+							<header>
+								<!-- <a href="#"><img src="images/pic01.jpg" alt="" /></a> -->
+								<a href="#"><img src="{{ url_for('static', filename='images/pic01.jpeg') }}" alt="" /></a>
+								<h3>How It Works</h3>
+							</header>
+							<p>The user enters a line into the program, and the program goes through word by word, replacing common abbreviations with proper English.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="#"><img src="{{ url_for('static', filename='images/pic2.jpg') }}" alt="" /></a>
+								<h3>Try It Here</h3>
+							</header>
+							<form method="POST">
+        						<textarea name="Input text"></textarea>
+        						<input type="submit">
+    						</form>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="#"><img src="{{ url_for('static', filename='images/pic03.jpg') }}" alt="" /></a>
+								<h3>Output</h3>
+							</header>
+							<p>Here is your output:</p>
+							<p>{{conv}}</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="#"><img src="{{ url_for('static', filename='images/pic04.jpg') }}" alt="" /></a>
+								<h3>Video- Coming Soon!</h3>
+							</header>
+							<p>embed video here</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</article>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="main special">
+						<h2>about us</h2>
+						<p>about us</p>
+						
+					</section>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
